@@ -1,0 +1,36 @@
+materiality_threshold: 10000000
+column_aliases:
+  posting date: Posting Date
+  pstng date: Posting Date
+  account: Account
+  g/l account: Account
+  gl account: Account
+  comp. code: Company Code
+  'comp. code :': Company Code
+  'comp. code:': Company Code
+  company code: Company Code
+  cocd: Company Code
+  amount in group crcy: Amount
+  amount in grp. currency: Amount
+  amount in global currency: Amount
+  amount: Amount
+  item text: Item Text
+  text: Item Text
+  vendor name: Vendor Name
+  vendor: Vendor Name
+  reference document: Reference Document
+  reference: Reference Document
+  doc. type: Document Type
+  document type: Document Type
+
+pnl_accounts:
+  '410100': {level1: Tax Provision, level2: Current Period, name: Current Tax Provision, sign_multiplier: -1}
+  '410200': {level1: Tax Provision, level2: Prior Period, name: Prior Period Tax Adjustment, sign_multiplier: -1}
+  '420100': {level1: Tax Adjustment, level2: R&D, name: R&D Tax Adjustment, sign_multiplier: 1}
+  '420200': {level1: Tax Adjustment, level2: Operations, name: Operational Tax Adjustment, sign_multiplier: 1}
+
+bs_accounts:
+  '120100': {level1: Tax Asset, level2: Receivable, name: Income Tax Receivable}
+  '120200': {level1: Tax Asset, level2: Withholding Tax, name: Withholding Tax Receivable}
+  '220100': {level1: Tax Liability, level2: Payable, name: Income Tax Payable}
+  '220200': {level1: Tax Liability, level2: Withholding Tax, name: Withholding Tax Payable}
